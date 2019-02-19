@@ -1,35 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>rayturner.tech</title>
+		<title>Fixed Width Layout</title>
 		<style type="text/css">
 			* {
 				font-family: Arial, Verdana, sans-serif;
 				color: #665544;
 				text-align: center;}
 			body {
-				width: 90%;
+				width: 960px;
 				margin: 0 auto;}
 			#content {
-				overflow: auto;}
+				overflow: auto;
+				height: 100%;}
 			#nav, #feature, #footer {
-				margin: 1%;}
+				background-color: #efefef;
+				padding: 10px;
+				margin: 10px;}
 			.column1, .column2, .column3 {
-				width: 31.3%;
+				background-color: #efefef;
+				width: 300px;
 				float: left;
-				margin: 1%;}
-			.column3 {
-				margin-right: 0%;}
+				margin: 10px;}
 			li {
 				display: inline;
-				padding: 0.5em;}
-			#nav, #footer {
-				background-color: #efefef;
-				padding: 0.5em 0;}
-			#feature, .article {
-				height: 10em;
-				margin-bottom: 1em;
-				background-color: #efefef;}
+				padding: 5px;}
 		</style>
 	</head>
 	<body>
@@ -38,7 +33,7 @@
 			<div id="nav">
 				<ul>
 					<li><a href="">Home</a></li>
-					<li><a href="">Portfolio</a></li>
+					<li><a href="">Products</a></li>
 					<li><a href="">Services</a></li>
 					<li><a href="">About</a></li>
 					<li><a href="">Contact</a></li>
@@ -50,13 +45,13 @@
 				<p>Feature</p>
 			</div>
 			<div class="article column1">
-				<p>Code</p>
+				<p>Column One</p>
 			</div>
 			<div class="article column2">
-				<p>Cyber Security</p>
+				<p>Column Two</p>
 			</div>
 			<div class="article column3">
-				<p>Data Science</p>
+				<p>Column Three</p>
 			</div>
 		</div>
 		<div id="footer">
@@ -64,4 +59,3 @@
 		</div>
 	</body>
 </html>
-
